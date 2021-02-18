@@ -374,6 +374,10 @@ public final class Session implements Runnable, MessageContext {
         return (InetSocketAddress) this.socket.getRemoteSocketAddress();
     }
 
+    public void setRemoteAddress(InetSocketAddress remoteAddress) {
+        this.remoteAddress = remoteAddress;
+    }
+
     @Override
     public InetSocketAddress getRemoteAddress() {
         return remoteAddress;

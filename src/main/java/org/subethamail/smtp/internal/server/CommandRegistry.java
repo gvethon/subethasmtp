@@ -19,6 +19,7 @@ import org.subethamail.smtp.internal.command.ReceiptCommand;
 import org.subethamail.smtp.internal.command.ResetCommand;
 import org.subethamail.smtp.internal.command.StartTLSCommand;
 import org.subethamail.smtp.internal.command.VerifyCommand;
+import org.subethamail.smtp.internal.command.XClientCommand;
 
 /**
  * Enumerates all the Commands made available in this release.
@@ -40,7 +41,8 @@ public enum CommandRegistry
 	STARTTLS(new StartTLSCommand(), false, false),
 	VRFY(new VerifyCommand(), true, true),
 	EXPN(new ExpandCommand(), true, true),
-	BDAT(new BdatCommand(), true, true);
+	BDAT(new BdatCommand(), true, true),
+	XCLIENT(new XClientCommand(), false, false);
 
 	private final Command command;
 
