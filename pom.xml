@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>A fork of a fork (!) of SubEtha, an easy-to-use server-side SMTP library for Java.</description>
-    <url>https://github.com/davidmoten/subethasmtp</url>
+    <url>https://github.com/gvethon/subethasmtp</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,6 +36,13 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/gvethon/subethasmtp</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
